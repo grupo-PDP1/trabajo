@@ -24,7 +24,7 @@ con ajustes de "contrast ratio" https://webaim.org/resources/contrastchecker/
 
 body {
     /* asignen aquí las tipografías y colores para todo texto */
-    font-family: 'Bebas Neue';
+    font-family: 'Bebas Neue', cursive;
     font-weight: 400;
     background: var(--segundocolor);
     color: var(--colorclaro);
