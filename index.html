@@ -60,8 +60,8 @@
                     <div class="row py-5 align-items-center">
                         <div class="col-md-6 col-lg-7">
                             <img loading="lazy" class="img-fluid bg-light d-md-none" src="img/relacion-1x1.png" alt="describa la imagen" />
-                            <img loading="lazy" class="img-fluid bg-light d-none d-md-block d-lg-none" src="img/relacion-4x3.png" alt="describa la imagen" />
-                            <img loading="lazy" class="img-fluid bg-light d-none d-lg-block" src="img/relacion-16x9.png" alt="describa la imagen" />
+                            <img loading="lazy" class="img-fluid bg-light d-none d-md-block d-lg-none" src="img/gráfico figurativo.jpeg" alt="describa la imagen" />
+                            <img loading="lazy" class="img-fluid bg-light d-none d-lg-block" src="img/gráfico figurativo 16-9.jpeg" alt="describa la imagen" />
                         </div>
                         <div class="col-md-6 col-lg-5 p-4">
                             <h3> <i class="bi bi-arrow-left"></i> Falta de presencia de la justicia en las sentencias de los detenidos <i class="bi bi-person-fill"></i></h3>
@@ -81,7 +81,7 @@
                     <div class="row py-5 align-items-center">
                         <div class="col-md-6 col-lg-7 order-md-last">
                             <svg enable-background="new 0 0 665 375" version="1.1" viewBox="0 0 665 375" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <image transform="matrix(.5 0 0 .5 0 0)" width="1330" height="750" overflow="visible" xlink:href="img/relacion-16x9.png"></image>
+                                <image transform="matrix(.5 0 0 .5 0 0)" width="1330" height="750" overflow="visible" xlink:href="img/Gráfico mixto PDP.svg"></image>
                                 <circle class="st0" cx="332.5" cy="187.5" r="125" />
                             </svg>
                         </div>
@@ -201,27 +201,35 @@
         ></script>
         <!--ESTE ES EL SCRIPT PARA EL GRÁFICO-->
         <script>
-            var ctx = document.getElementById("nuestroGrafico");
-            var nuestroGrafico = new Chart(ctx, {
-                type: "line",
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'line',
                 data: {
-                    labels: ["Red", "Blue", "Yellow", "Green", "Cyan", "Magenta"],
-                    datasets: [
-                        {
-                            label: "# of Votes",
-                            data: [12, 19, 3, 5, 2, 3],
-                            backgroundColor: ["#38B6FF", "#737373", "#BB3444"],
-                            borderWidth: 1,
-                        },
-                    ],
+                    labels: ["Somalia", "Liberia", "Etiopía", "Zambia", "Chad", "República Unida de Tanzania", "Yemen", "Guinea-Bissau", "Pakistán", "República Democrática del Congo"],
+                    datasets: [{
+                        label: 'Porcentaje de infantes no inscritos',
+                        data: [97, 96, 93, 86, 84, 84, 83, 76, 73, 72],
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        borderWidth: 2
+                    }]
                 },
                 options: {
                     scales: {
                         y: {
-                            beginAtZero: true,
-                        },
+                            beginAtZero: true
+                        }
                     },
-                },
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Los 10 países con los niveles más altos de niños no inscritos',
+                            font:
+                                {
+                                    size: 18
+                                }
+                        }
+                    }
+                }
             });
         </script>
         <!--NO BORRAR ESTA BIBLIOTECA DE JAVASCRIPT-->
