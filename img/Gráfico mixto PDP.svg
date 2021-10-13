@@ -3,8 +3,9 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 841.89 595.28" style="enable-background:new 0 0 841.89 595.28;" xml:space="preserve">
 <style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;500;700&display=swap');
 	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
-	.st1{font-family: sans-serif;}
+	.st1{font-family: 'Roboto', sans-serif;}
 	.st2{font-size:13.9737px;}
 	.st3{fill:#4EAFE3;}
 	.st4{fill:#BA3545;}
