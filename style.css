@@ -106,12 +106,12 @@ main {
     background-image: url("img/fondo grafico 21.9.jpg");
     background-position: center bottom;
     background-repeat: repeat-x;
-    background-size: 100% 100%;
+    background-size: 100% auto;
 }
 
 @media (min-width: 768px) {
     main {
-        background-size: 50% 100%;
+        background-size: 50% auto;
     }
 }
 
