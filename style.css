@@ -74,7 +74,7 @@ en todos los casos la imagen debería pesar menos de 300kb
 
 header {
     background-color: var(--segundocolor);
-    background-image: url("img/fondoo 3.4.png");
+    background-image: url("img/fondoo 3.4.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,13 +83,13 @@ header {
 
 @media (min-width: 576px) {
     header {
-        background-image: url("img/fondo 4.3.png");
+        background-image: url("img/fondo 4.3.jpg");
     }
 }
 
 @media (min-width: 992px) {
     header {
-        background-image: url("img/fondo 21.9.png");
+        background-image: url("img/fondo 21.9.jpg");
     }
 }
 
