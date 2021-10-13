@@ -44,7 +44,7 @@ p.lead {
     /* asignen aquí la tipografía y peso que corresponda para los títulos */
     font-family: 'Bebas Neue', cursive;
     font-weight: 400;
-    color: var(--tercercolor);
+    color: var(--primercolor);
 }
 
 a {
